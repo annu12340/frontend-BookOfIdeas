@@ -14,6 +14,8 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    
+
   </head>
 
   <body>
@@ -65,7 +67,7 @@
               >
             </button>
           </div>
-          <div class="col-md-5 col-sm-12 h-25">
+          <div class="col-md-5 col-sm-12 h-25" data-scroll>
             <img src="https://github.com/akashyap2013/Books-bootstrap-website/blob/master/assets/header-img.png?raw=true" alt="Book" />
           </div>
         </div>
@@ -81,20 +83,23 @@
                 <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1462893297l/30156456._SX318_.jpg" alt="Pray" class="" />
               </div>
             </div>
-            <div class="col-md-6 col-12">
-              <div class="panel text-left" style="font-size: 19px;">
-                <h1>Book of Ideas</h1>
-                <p class="pt-4">
-                  Book of Ideas is just that: an outpouring of what one creative director and designer has discovered from many years working in the strange and endlessly
-                  fascinating world of the creative industry. Sharing advice on everything from inspiration to inbox control, facing your fears, finding happiness in your
-                  work, the art of self-promotion and beating creative block.
-                </p>
-                <p>
-                  <br />
-                  The book presents a beautiful showcases the most important design work to-date, alongside an engaging collection of his observations and musings
-                  spanning a vast range of topics within the creative industry. Split into three sections - work, creativity and mind - each theme is generously divided
-                  into intriguingly titled sub-sections that touch on everything from the art of choosing clients to how to banish self-doubt.
-                </p>
+            <div class="col-md-6 col-12 " >
+              <div class="panel text-left" style="font-size: 19px;" >
+                <div data-scroll>
+                  <h1>Book of Ideas</h1>
+                  <p class="pt-4" >
+                    Book of Ideas is just that: an outpouring of what one creative director and designer has discovered from many years working in the strange and endlessly
+                    fascinating world of the creative industry. Sharing advice on everything from inspiration to inbox control, facing your fears, finding happiness in your
+                    work, the art of self-promotion and beating creative block.
+                  </p>
+                  <p>
+                    <br />
+                    The book presents a beautiful showcases the most important design work to-date, alongside an engaging collection of his observations and musings
+                    spanning a vast range of topics within the creative industry. Split into three sections - work, creativity and mind - each theme is generously divided
+                    into intriguingly titled sub-sections that touch on everything from the art of choosing clients to how to banish self-doubt.
+                  </p>
+                </div>
+               
               </div>
             </div>
           </div>
@@ -125,7 +130,7 @@
                   <div class="item active">
                     <div class="testimonial-block">
                       <div class="inner-box">
-                        <div class="text">
+                        <div class="text" data-scroll>
                           The Book of Ideas is part portfolio, part journal of one designer's experiences and lessons in the industry. As someone who lost their interest
                           in design because of 'cheap and quick' outputs, this book rekindled my enthusiasm for design. This book is truly beautiful, and serves as a
                           potent reminder that design is everywhere.
@@ -140,8 +145,8 @@
                     <!-- Quote 2 -->
                     <div class="item" style="transform: translateX(20%);">
                       <div class="testimonial-block">
-                        <div class="inner-box">
-                          <div class="text pr-2">
+                        <div class="inner-box" data-scroll>
+                          <div class="text pr-2" >
                             It’s a very refreshing read that includes beautiful work, inspirational thoughts and in Radim’s own words . “Every chapter is a memo from the
                             diary I never had” .Each section throughout the book offers a gem of professional insight, accompanied with striking imagery
                           </div>
@@ -225,6 +230,12 @@
           }
         });
 });
+    </script>
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script>
+      ScrollOut({
+        threshold:0.8
+      });
     </script>
   </body>
 </html>
