@@ -382,3 +382,16 @@ footer .column i + i {
     padding-right: 20px;
   }
 }
+
+/* SCROLL ANIMATION */
+[data-scroll] {
+  transition: all 2s;
+}
+[data-scroll="in"] {
+  opacity: 1;
+  transform: translateX(0);
+}
+[data-scroll="out"] {
+  opacity: 0;
+  transform: translateX(-30px);
+}
